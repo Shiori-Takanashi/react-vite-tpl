@@ -13,4 +13,4 @@
 ## 留意点
 |日付|要旨|link|
 |------|------|------|
-|2025/10/22 ??:??|packageについては解消済み|(https://github.com/Shiori-Takanashi/react-vite-tpl/issues/1)|
+|2025/10/22 ？？:？？|packageについては解消済み|(https://github.com/Shiori-Takanashi/react-vite-tpl/issues/1)|
