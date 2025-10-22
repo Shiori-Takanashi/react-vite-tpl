@@ -13,4 +13,4 @@
 ## 留意点
 |要旨|link|
 |------|------|
-|packageについては解消済み|(../../issues/1)|
+|packageについては解消済み|(https://github.com/Shiori-Takanashi/react-vite-tpl/issues/1)|
