@@ -5,10 +5,10 @@
 
 ## README更新履歴
 
-|日付|Link|
-|------|-----------|
-|2025/10/22/18時頃|(https://github.com/Shiori-Takanashi/react-vite-tpl/commit/aaf27a19e712350322c33d58e36b9c61a0d571c8) |
-|2025/10/22/23:05|(https://github.com/Shiori-Takanashi/react-vite-tpl/commit)|
+|日付|
+|------|
+|2025/10/22/18時頃|
+|2025/10/22/23:05|
 
 
 ## 留意点
