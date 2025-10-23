@@ -72,3 +72,7 @@ pids
 # parcel-bundler cache (https://parceljs.org/)
 .cache
 .parcel-cache
+
+# no logo version
+pubic/tiger.svg
+src/assets/cat.svg
