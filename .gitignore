@@ -74,5 +74,4 @@ pids
 .parcel-cache
 
 # no logo version
-public/tiger.svg
 src/assets/cat.svg
