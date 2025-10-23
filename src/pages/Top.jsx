@@ -8,7 +8,7 @@ export default function Top() {
 
                 {/* ロゴ */}
                 <div className="logo-container">
-                    <img src="/tiger.svg" alt="Logo" className="logo" />
+                    <img src="src/assets/cat.svg" alt="Logo" className="logo" />
                 </div>
 
                 <h2 className="loading-text">Loading...</h2>
