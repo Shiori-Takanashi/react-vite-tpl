@@ -1,6 +1,10 @@
-import '../styles/top.css'
+import '../styles/top.css';
+import cat from '../assets/cat.svg';
+import tiger from '../assets/tiger.svg';
 
 export default function Top() {
+    const animal = import.meta.env.DEV ? cat : tiger;
+
     return (
         <>
             <h1 className="loading-title">React & Vite & Vercel</h1>
@@ -8,7 +12,7 @@ export default function Top() {
 
                 {/* ロゴ */}
                 <div className="logo-container">
-                    <img src="/logo.svg" alt="Logo" className="logo" />
+                    <img src={animal} alt="Logo" className="logo" />
                 </div>
 
                 <h2 className="loading-text">Loading...</h2>

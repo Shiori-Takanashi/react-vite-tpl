@@ -1,0 +1,22 @@
+name: auto-pr
+
+on:
+  push:
+    branches: [feature-cat]
+
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create Pull Request
+        run: |
+          gh pr create \
+            --base master \
+            --head feature-cat \
+            --title "Demo PR feature-cat to master" \
+            --body "Auto-generated PR for Practice."
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
