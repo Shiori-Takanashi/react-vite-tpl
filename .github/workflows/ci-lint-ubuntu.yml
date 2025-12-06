@@ -1,4 +1,4 @@
-name: CI Lint On - Ubuntu
+name: CI Lint On Ubuntu
 
 on: push
 
