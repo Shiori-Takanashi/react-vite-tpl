@@ -1,4 +1,4 @@
-name: CI - Lint
+name: CI - Lint - On - Ubuntu
 
 on: push
 
@@ -11,4 +11,5 @@ jobs:
         with:
           node-version: '24'
           cache: npm
+      - run: npm ci
       - run: npm run lint
