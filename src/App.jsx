@@ -1,13 +1,12 @@
-import './App.css'
-import Top from './pages/Top'
+import "./App.css";
+import Top from "./pages/Top";
 
 function App() {
-
   return (
     <>
       <Top />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
