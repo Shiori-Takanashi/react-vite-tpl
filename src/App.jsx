@@ -7,6 +7,10 @@ import { Tracker } from "./router/Tracker";
 
 export default function App() {
   return (
-    <RouterProvider router={router} />
+    <HistoryProvider>
+      <RouterProvider router={router}>
+        <Tracker />
+      </RouterProvider>
+    </HistoryProvider>
   );
 }
