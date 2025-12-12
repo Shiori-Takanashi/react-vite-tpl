@@ -1,20 +1,20 @@
 /* src/styles/base-pages.css */
 .main-page {
-    background-color: rgb(242, 251, 235);
-    color: rgb(15, 23, 42);
-    min-height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-color: rgb(242, 251, 235);
+  color: rgb(15, 23, 42);
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-title {
-    margin: 36px;
-    font-size: 2em;
-    font-weight: bold;
+  margin: 36px;
+  font-size: 2em;
+  font-weight: bold;
 }

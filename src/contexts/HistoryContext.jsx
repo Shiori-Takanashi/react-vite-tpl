@@ -5,7 +5,7 @@ import { createContext, useState, useCallback, useContext } from "react";
 // Context作成
 const HistoryContext = createContext({
   history: [],
-  addHistory: () => { },
+  addHistory: () => {},
 });
 
 // Provider

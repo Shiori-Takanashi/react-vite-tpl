@@ -3,10 +3,10 @@ import { Outlet } from "react-router-dom";
 import Tracker from "../components/Tracker";
 
 export default function MainLayout() {
-    return (
-        <>
-            <Tracker />
-            <Outlet />
-        </>
-    );
+  return (
+    <>
+      <Tracker />
+      <Outlet />
+    </>
+  );
 }
