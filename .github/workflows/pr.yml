@@ -10,14 +10,27 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Create Pull Request
+      - name: Check for existing PR
+        id: check_pr
         run: |
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
+          EXISTING_PR=$(gh pr list --head $BRANCH_NAME --base histories --state open --json number --jq '.[0].number')
+          echo "existing_pr=$EXISTING_PR" >> $GITHUB_OUTPUT
+          echo "branch_name=$BRANCH_NAME" >> $GITHUB_OUTPUT
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Create Pull Request
+        if: steps.check_pr.outputs.existing_pr == ''
+        run: |
           gh pr create \
             --base histories \
-            --head $BRANCH_NAME \
-            --title "Demo PR $BRANCH_NAME to histories" \
-            --body "Auto-generated PR for Practice."
+            --head ${{ steps.check_pr.outputs.branch_name }} \
+            --title "Demo PR ${{ steps.check_pr.outputs.branch_name }} to histories" \
+            --body "Auto-generated PR for Practice." \
+          || echo "PR creation skipped (no changes or PR already exists)"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
