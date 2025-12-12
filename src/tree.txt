@@ -1,0 +1,33 @@
+.
+├── App.css
+├── App.jsx
+├── assets
+│   ├── cat.svg
+│   └── tiger.svg
+├── components
+│   ├── Header.jsx
+│   └── History.jsx
+├── contexts
+│   ├── HistoryContext.jsx
+│   └── HistoryProvider.jsx
+├── hooks
+│   └── useHistory.js
+├── index.css
+├── main.jsx
+├── pages
+│   ├── About.jsx
+│   ├── Culture.jsx
+│   ├── Home.jsx
+│   ├── Loading.jsx
+│   └── News.jsx
+├── router
+│   ├── Routes.jsx
+│   └── Tracker.jsx
+├── styles
+│   ├── header.css
+│   ├── history.css
+│   ├── home.css
+│   └── top.css
+└── tree.txt
+
+8 directories, 23 files

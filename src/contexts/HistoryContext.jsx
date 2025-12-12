@@ -2,6 +2,6 @@
 import { createContext } from "react";
 
 export const HistoryContext = createContext({
-    history: [],
-    addHistory: () => { }
+  history: [],
+  addHistory: () => {},
 });
