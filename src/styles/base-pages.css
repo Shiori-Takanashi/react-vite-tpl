@@ -1,0 +1,41 @@
+/* src/styles/base-pages.css */
+.main-page {
+  background-color: var(--page-bg-color, rgb(255, 255, 255));
+  color: var(--page-text-color, rgb(15, 23, 42));
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-title {
+  margin: 36px;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+/* ページ別の背景色定義 */
+.home-theme {
+  --page-bg-color: rgb(255, 255, 255);
+  --page-text-color: rgb(15, 23, 42);
+}
+
+.about-theme {
+  --page-bg-color: rgb(255, 255, 255);
+  --page-text-color: rgb(15, 23, 42);
+}
+
+.news-theme {
+  --page-bg-color: rgb(255, 255, 255);
+  --page-text-color: rgb(15, 23, 42);
+}
+
+.culture-theme {
+  --page-bg-color: rgb(255, 255, 255);
+  --page-text-color: rgb(15, 23, 42);
+}

@@ -1,9 +1,9 @@
 // src/pages/Loading.jsx
-import "../styles/top.css";
 import cat from "../assets/cat.svg";
 import tiger from "../assets/tiger.svg";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/loading.css";
 
 export default function Loading() {
   const animal = import.meta.env.DEV ? cat : tiger;
@@ -17,7 +17,7 @@ export default function Loading() {
   }, [navigate]);
 
   return (
-    <>
+    <div className="loading-page">
       <div className="loading-container">
         {/* ロゴ */}
         <div className="logo-container">
@@ -37,6 +37,6 @@ export default function Loading() {
           <div className="dot"></div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
