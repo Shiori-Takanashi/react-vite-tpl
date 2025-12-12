@@ -2,6 +2,7 @@ name: auto-pr
 
 on:
   push:
+    branches: [develop/histories]
     branches-ignore: [master]
 
 jobs:
@@ -15,9 +16,9 @@ jobs:
         run: |
           BRANCH_NAME=${GITHUB_REF#refs/heads/}
           gh pr create \
-            --base master \
+            --base histories \
             --head $BRANCH_NAME \
-            --title "Demo PR $BRANCH_NAME to master" \
+            --title "Demo PR $BRANCH_NAME to histories" \
             --body "Auto-generated PR for Practice."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

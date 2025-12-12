@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { useHistory } from "../contexts/HistoryContext";
 
-export function Tracker() {
+export default function Tracker() {
   const location = useLocation();
   const { addHistory } = useHistory();
 

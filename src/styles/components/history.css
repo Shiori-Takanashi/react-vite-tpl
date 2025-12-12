@@ -1,3 +1,8 @@
 li {
   color: black;
+  list-style: none;
+}
+
+ul {
+  padding: 10px;
 }

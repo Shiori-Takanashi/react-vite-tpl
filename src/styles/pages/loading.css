@@ -45,8 +45,8 @@
 }
 
 .logo {
-  width: 200px;
-  height: 200px;
+  width: 180px;
+  height: 180px;
   opacity: 0.8;
   transition: opacity 0.3s ease;
   user-select: none;
@@ -65,17 +65,6 @@
   color: #646cff;
   font-size: 2em;
   font-weight: bold;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-.loading-description {
-  color: #666;
-  font-size: 18px;
-  text-align: center;
-  margin-bottom: 20px;
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -109,6 +98,7 @@
 }
 
 @keyframes bounce {
+
   0%,
   80%,
   100% {
