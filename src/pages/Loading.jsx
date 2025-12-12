@@ -5,7 +5,7 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import "../styles/pages/loading.css";
-import "../styles/components/header.css"
+import "../styles/components/header.css";
 
 export default function Loading() {
   const animal = import.meta.env.DEV ? cat : tiger;
@@ -35,7 +35,6 @@ export default function Loading() {
         <div className="logo-container">
           <img src={animal} alt="Logo" className="logo" />
         </div>
-
       </div>
     </div>
   );
