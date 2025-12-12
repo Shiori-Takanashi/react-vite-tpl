@@ -1,16 +1,6 @@
 // src/pages/About.jsx
-import Header from "../components/Header";
-import History from "../components/History";
-import "../styles/base-pages.css";
+import PageLayout from "../layouts/PageLayout";
 
 export default function About() {
-  return (
-    <div className="main-page about-theme">
-      <Header />
-      <main>
-        <h1 className="page-title">about</h1>
-        <History />
-      </main>
-    </div>
-  );
+  return <PageLayout title="about" />;
 }

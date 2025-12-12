@@ -24,10 +24,11 @@
 │   ├── Routes.jsx
 │   └── Tracker.jsx
 ├── styles
+│   ├── base-pages.css
+│   ├── global-reset.css
 │   ├── header.css
 │   ├── history.css
-│   ├── home.css
-│   └── top.css
+│   └── loading.css
 └── tree.txt
 
-8 directories, 23 files
+8 directories, 24 files

@@ -2,7 +2,7 @@
 import "./App.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./router/Routes";
-import { HistoryProvider } from "./contexts/HistoryProvider";
+import { HistoryProvider } from "./contexts/HistoryContext";
 
 export default function App() {
   return (

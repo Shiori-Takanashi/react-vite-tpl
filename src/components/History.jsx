@@ -1,6 +1,6 @@
 // src/components/History.jsx
-import { useHistory } from "../hooks/useHistory";
-import "../styles/history.css";
+import { useHistory } from "../contexts/HistoryContext";
+import "../styles/components/history.css";
 
 export default function History() {
   const { history } = useHistory();

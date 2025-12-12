@@ -1,24 +1,15 @@
 // src/router/Routes.jsx
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import Home from "../pages/Home";
 import Loading from "../pages/Loading";
 import About from "../pages/About";
 import News from "../pages/News";
 import Culture from "../pages/Culture";
-import { Tracker } from "./Tracker";
-
-function Layout() {
-  return (
-    <>
-      <Tracker />
-      <Outlet />
-    </>
-  );
-}
+import MainLayout from "../layouts/MainLayout";
 
 export const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: <MainLayout />,
     children: [
       { path: "/", element: <Loading /> },
       { path: "/home", element: <Home /> },

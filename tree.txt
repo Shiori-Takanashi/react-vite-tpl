@@ -1,43 +1,10 @@
-.
-├── README.md
-├── docs
-│   ├── logs
-│   │   ├── ci_error.log
-│   │   └── ci_error02.log
-│   ├── problems
-│   │   ├── page01.md
-│   │   └── page02.md
-│   └── wiki
-│       └── page01.md
-├── eslint.config.js
-├── index.html
-├── package-lock.json
-├── package.json
-├── public
-│   └── favicon.svg
-├── src
-│   ├── App.css
-│   ├── App.jsx
-│   ├── assets
-│   │   ├── cat.svg
-│   │   └── tiger.svg
-│   ├── components
-│   ├── contexts
-│   │   └── HistoryProvider.jsx
-│   ├── hooks
-│   │   └── useHistory.js
-│   ├── index.css
-│   ├── main.jsx
-│   ├── pages
-│   │   ├── Home.jsx
-│   │   └── Loading.jsx
-│   ├── router
-│   │   ├── Routes.jsx
-│   │   └── Tracker.jsx
-│   └── styles
-│       ├── home.css
-│       └── top.css
-├── tree.txt
-└── vite.config.js
+dist
+├── assets
+│   ├── cat-BanXyOVb.svg
+│   ├── index-B9R3njH0.css
+│   ├── index-CWE-5_13.js
+│   └── tiger-CvhREVbs.svg
+├── favicon.svg
+└── index.html
 
-14 directories, 27 files
+2 directories, 6 files
