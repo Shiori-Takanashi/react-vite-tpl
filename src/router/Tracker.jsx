@@ -5,11 +5,11 @@ import { useHistory } from "../hooks/useHistory";
 
 export function Tracker() {
   const location = useLocation();
-  const { add } = useHistory();
+  const { addHistory } = useHistory();
 
   useEffect(() => {
-    add(location.pathname);
-  }, [add, location.pathname]);
+    addHistory(location.pathname);
+  }, [addHistory, location.pathname]);
 
   return null;
 }

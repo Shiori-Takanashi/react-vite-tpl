@@ -8,6 +8,9 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav-list">
           <li>
+            <Link to="/">Loading</Link>
+          </li>
+          <li>
             <Link to="/home">Home</Link>
           </li>
           <li>
