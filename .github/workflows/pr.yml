@@ -2,8 +2,7 @@ name: auto-pr
 
 on:
   push:
-    branches: [develop/histories]
-    branches-ignore: [master]
+    branches: [develop02/histories]
 
 jobs:
   create-pr:

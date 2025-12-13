@@ -2,5 +2,5 @@
 import PageLayout from "../layouts/PageLayout";
 
 export default function About() {
-  return <PageLayout title="about" />;
+  return <PageLayout title="About" />;
 }
