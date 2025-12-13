@@ -2,5 +2,5 @@
 import PageLayout from "../layouts/PageLayout";
 
 export default function News() {
-  return <PageLayout title="news" />;
+  return <PageLayout title="News" />;
 }

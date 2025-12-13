@@ -2,5 +2,5 @@
 import PageLayout from "../layouts/PageLayout";
 
 export default function Culture() {
-  return <PageLayout title="culture" />;
+  return <PageLayout title="Culture" />;
 }
