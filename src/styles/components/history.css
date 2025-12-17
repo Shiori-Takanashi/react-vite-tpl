@@ -1,9 +1,24 @@
-li {
-  color: black;
-  list-style: none;
+/* src/styles/components/history.css */
+
+.history-line {
+  color: rgb(0 51 118);
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0.5em 0 0;
+  border-bottom: 1px inset rgb(85 85 83);
 }
 
-ul {
-  padding: 10px;
+.history-line:hover {
+  background-color: rgb(175 207 170);
+}
+
+.history-content {
+  list-style: none;
   max-width: 100%;
+}
+
+.history-list::after {
+  content: "";
+  display: block;
+  height: 1.5rem;
 }

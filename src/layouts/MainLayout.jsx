@@ -1,6 +1,7 @@
 // src/layouts/MainLayout.jsx
 import { Outlet } from "react-router-dom";
-import Tracker from "../components/Tracker";
+
+import Tracker from "../router/Tracker";
 
 export default function MainLayout() {
   return (
