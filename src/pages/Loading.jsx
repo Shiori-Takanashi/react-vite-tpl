@@ -1,8 +1,9 @@
 // src/pages/Loading.jsx
-import cat from "../assets/cat.svg";
-import tiger from "../assets/tiger.svg";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
+
+import cat from "../assets/cat.svg";
+import tiger from "../assets/tiger.svg";
 import "../styles/pages/loading.css";
 
 export default function Loading() {

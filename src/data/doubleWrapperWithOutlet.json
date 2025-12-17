@@ -1,0 +1,17 @@
+{
+  "title": "Double Wrapper - Using Outlet",
+  "heading": "🔵 Outlet を使った2重ラップの例",
+  "description": "このページは PageLayout で2重にラップされています（Outlet を使用）。",
+  "domStructureLabel": "DOM をブラウザの開発者ツールで確認すると、以下の構造になっています：",
+  "domStructure": "MainLayout\n  ├─ Tracker\n  └─ PageLayout (1回目 - Routes で定義)\n    ├─ Header (1回目)\n    ├─ main\n    │  ├─ h1 \"undefined\"\n    │  ├─ Outlet\n    │  │  └─ PageLayout (2回目 - Outlet の中身)\n    │  │    ├─ Header (2回目 - 重複)\n    │  │    ├─ main\n    │  │    │  ├─ h1 \"Double Wrapper - Using Outlet\"\n    │  │    │  ├─ Outlet (DoubleWrapperWithOutlet の子ルート)\n    │  │    │  │  └─ OutletContent（存在する場合）\n    │  │    │  └─ History (2回目)\n    │  │    └─ History\n    │  └─ History (1回目)",
+  "problemsHeading": "❌ 問題点：",
+  "problems": [
+    "Tracker が2回実行される → 履歴が重複記録",
+    "Header が2回レンダリングされる",
+    "History が2回表示される",
+    "CSS スタイルが競合する可能性",
+    "パフォーマンスが低下"
+  ],
+  "patternHeading": "このパターンとの違い：",
+  "patternDescription": "Outlet を使った2重ラップは、ルーター定義に基づいて自動的にネストされたコンポーネントが表示されます。children を使ったパターンよりも、ルーターの構造が明確ですが、仍然2重ラップは避けるべきです。"
+}

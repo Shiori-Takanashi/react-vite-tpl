@@ -6,12 +6,12 @@ export default function History() {
   const { history } = useHistory();
 
   return (
-    <div>
-      <ul>
-        {history.map((path, index) => (
-          <li key={index}>{path}</li>
-        ))}
-      </ul>
-    </div>
+    <ul className="history-content">
+      {history.map((path, index) => (
+        <li className="history-line" key={index}>
+          {path}
+        </li>
+      ))}
+    </ul>
   );
 }

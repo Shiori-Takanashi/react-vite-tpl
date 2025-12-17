@@ -1,12 +1,14 @@
 .header {
-  padding: 12px 20px;
-  border-bottom: 1px solid #ccc;
+  padding: 24px 0;
+  border-bottom: 1px solid #000;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .nav-list {
   display: flex;
-  gap: 16px;
   list-style: none;
+  gap: 2em;
   margin: 0;
   padding: 0;
 }
@@ -14,6 +16,8 @@
 .nav-list a {
   text-decoration: none;
   color: #333;
+  font-size: 1.2em;
+  font-weight: 600;
 }
 
 .nav-list a:hover {

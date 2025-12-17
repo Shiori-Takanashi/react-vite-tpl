@@ -1,17 +1,22 @@
 // src/layouts/PageLayout.jsx
-import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import History from "../components/History";
-import "../styles/pages/base.css";
+import "../styles/layouts/pagelayout.css";
+import "../styles/pages/pages.css";
 
-export default function PageLayout({ title, children }) {
+export default function PageLayout({ title }) {
   return (
-    <div className="main-page">
+    <div className="page">
       <Header />
-      <main>
-        <h1 className="page-title">{title}</h1>
-        {children || <Outlet />}
-        <History />
+      <main className="content">
+        <div className="page-title-container">
+          <h1 className="page-title">{title}</h1>
+        </div>
+        <div className="history-wrap">
+          <div className="history-container">
+            <History />
+          </div>
+        </div>
       </main>
     </div>
   );

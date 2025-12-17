@@ -1,4 +1,4 @@
 /* src/App.css */
-@import "./styles/global-reset.css";
+@import url("./styles/global-reset.css");
 
 /* App固有のスタイルがあればここに追加 */

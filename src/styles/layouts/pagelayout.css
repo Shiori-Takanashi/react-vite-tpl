@@ -1,0 +1,53 @@
+body {
+  overflow: hidden;
+}
+
+.page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(184 196 182);
+}
+
+.content {
+  flex: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
+  display: flex;
+
+  /* ここが重要 */
+  flex-direction: column;
+  min-height: 0;
+
+  /* 子の overflow を効かせる必須条件 */
+}
+
+.page-title-container {
+  width: 100%;
+  margin: 0 1em;
+}
+
+.history-wrap {
+  flex: 1;
+  min-height: 0;
+  padding-bottom: 24px;
+
+  /* ここが“バーの下”になる */
+}
+
+.history-container {
+  flex: 1;
+
+  /* main の残り高さを履歴に割り当てる */
+  height: 100%;
+
+  /* overflow 発火に必須 */
+  overflow-y: auto;
+
+  /* 内部スクロール */
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  scrollbar-gutter: stable;
+}

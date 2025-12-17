@@ -1,0 +1,18 @@
+{
+  "title": "Double Wrapper - Using Children",
+  "heading": "🔴 children を使った2重ラップの例",
+  "description": "このページは PageLayout で2重にラップされています（children を使用）。",
+  "domStructureLabel": "DOM をブラウザの開発者ツールで確認すると、以下の構造になっています：",
+  "domStructure": "MainLayout\n  ├─ Tracker\n  └─ PageLayout (1回目 - Routes で定義)\n    ├─ Header (1回目)\n    ├─ main\n    │  ├─ h1 \"undefined\"\n    │  ├─ Outlet\n    │  │  └─ DoubleWrapperWithChildren\n    │  │    └─ PageLayout (2回目 - 2重ラップ！)\n    │  │      ├─ Header (2回目 - 重複)\n    │  │      ├─ main\n    │  │      │  ├─ h1 \"Double Wrapper - Using Children\"\n    │  │      │  └─ children の内容\n    │  │      │  └─ History (2回目)\n    │  │      └─ children や Outlet\n    │  └─ History (1回目)",
+  "problemsHeading": "❌ 問題点：",
+  "problems": [
+    "Tracker が2回実行される → 履歴が重複記録",
+    "Header が2回レンダリングされる",
+    "History が2回表示される",
+    "CSS スタイルが競合する可能性",
+    "パフォーマンスが低下",
+    "children プロップを使っているため、通常のルーティングとは異なる実装"
+  ],
+  "patternHeading": "このパターンの使い分け：",
+  "patternDescription": "children を使った2重ラップは、ルーター経由ではなく、親コンポーネントから明示的に子を渡すパターンです。通常、この方法は避けるべきです。"
+}
